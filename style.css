@@ -1,0 +1,535 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5d5f60;
+  color: white;
+}
+
+.scene {
+  width: 1200px;
+  height: 750px;
+  border-radius: 50px;
+  overflow: hidden;
+  background: linear-gradient(#f48413, #10405b, #e4f279, #fff);
+  background-size: 100% 300%;
+  box-shadow: 0px 0px 50px yellow;
+  position: absolute;
+  transition: 2s;
+}
+
+.tamkang {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: scale(0.95);
+}
+
+.title {
+  position: relative;
+  left: 50px;
+}
+
+.hugo {
+  position: absolute;
+  left: 50px;
+  font-size: 45px;
+  left: 930px;
+  bottom: 650px;
+}
+
+.hugo2 {
+  position: absolute;
+  font-size: 45px;
+  left: 1060px;
+  bottom: 600px;
+}
+
+.pic {
+  height: 110px;
+  width: 200px;
+  position: relative;
+  background-size: contain;
+  bottom: 200px;
+  right: 450px;
+  background-image: url(https://i.imgur.com/pYzxUfk.jpg);
+  border-radius: 30px;
+}
+
+.scene:hover {
+  box-shadow: 30px 10px 40px rgba(0, 0, 0, 0.7);
+  transform: translate(20px, 0px);
+  transition: 2s;
+  background: linear-gradient(#199ce8, #10405b, #e4f279, #fff);
+}
+.scene:hover .title {
+  opacity: 1;
+  transition: 8s;
+}
+.scene:hover .question {
+  opacity: 1;
+  transition: 8s;
+}
+.scene:hover .hugo {
+  opacity: 1;
+  transition: 1s;
+  position: absolute;
+  bottom: 500px;
+  right: 400px;
+  color: #f26868;
+}
+.scene:hover .hugo2 {
+  opacity: 1;
+  transition: 0.5s;
+  position: absolute;
+  top: 130px;
+  color: #f26868;
+}
+.scene:hover .title {
+  position: absolute;
+  left: 120px;
+  top: 20px;
+  font-size: 50px;
+  margin: 0;
+  color: white;
+  opacity: 0;
+}
+.scene:hover .question {
+  font-size: 35px;
+  margin: 0;
+}
+.scene:hover .pic {
+  transform: translate(20px, 0px);
+}
+
+.pic:hover {
+  box-shadow: 0px 0px 50px white;
+  transform: translate(-20px, 0px);
+  background-image: url(https://imgur.com/9291J88.jpg);
+}
+
+.scene:active .question {
+  display: block;
+}
+
+[class^=lamp1] {
+  position: relative;
+  right: 0;
+  bottom: 0;
+}
+
+.board1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: relative;
+  right: 200px;
+  bottom: 250px;
+  width: 500px;
+  background-color: #b2b2b2;
+  box-shadow: 0px 0px 50px white;
+}
+.board1 .boardtext {
+  margin: 50px;
+  left: 30px;
+  right: 30px;
+}
+.board1 h2 {
+  letter-spacing: 5px;
+  font-weight: 300px;
+  margin-top: 0px;
+  font-size: 40px;
+  text-align: center;
+  font-family: impact;
+  background-color: #dbdb2e;
+}
+
+.stick {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  right: 413px;
+  bottom: 100px;
+  width: 80px;
+  background-color: #3e493e;
+}
+.stick .stick2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  right: 610px;
+  height: 345px;
+  bottom: 2px;
+  width: 30px;
+  background-color: #b3c3cc;
+}
+.stick .stick3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  right: 400px;
+  height: 310px;
+  bottom: 180px;
+  width: 25px;
+  background-color: #b3c3cc;
+}
+.stick .stick4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  right: 200px;
+  height: 145px;
+  bottom: 400px;
+  width: 20px;
+  background-color: #b3c3cc;
+}
+.stick .stick5 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  right: 50px;
+  height: 90px;
+  bottom: 500px;
+  width: 15px;
+  background-color: #b3c3cc;
+}
+
+.lamps .lamps1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 60px;
+  height: 100px;
+  background-color: #b3c3cc;
+  right: 953px;
+  bottom: 315px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px yellow;
+}
+.lamps .lamps2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 60px;
+  height: 100px;
+  background-color: #b3c3cc;
+  right: 1063px;
+  bottom: 315px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px yellow;
+}
+.lamps .lamps3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 60px;
+  height: 100px;
+  background-color: #b3c3cc;
+  right: 953px;
+  bottom: 315px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px yellow;
+}
+.lamps .lamps4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 50px;
+  height: 90px;
+  background-color: #b3c3cc;
+  right: 755px;
+  bottom: 475px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px yellow;
+}
+.lamps .lamps5 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 50px;
+  height: 90px;
+  background-color: #b3c3cc;
+  right: 845px;
+  bottom: 475px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px yellow;
+}
+.lamps .lamps6 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  background-color: #b3c3cc;
+  right: 575px;
+  bottom: 570px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px yellow;
+}
+.lamps .lamps7 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  background-color: #b3c3cc;
+  right: 640px;
+  bottom: 570px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px yellow;
+}
+.lamps .lamps8 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  background-color: #b3c3cc;
+  right: 480px;
+  bottom: 640px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px yellow;
+}
+.lamps .lamps9 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  background-color: #b3c3cc;
+  right: 440px;
+  bottom: 640px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px yellow;
+}
+
+.cover .cover1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-color: #7c581a;
+  right: 953px;
+  bottom: 400px;
+}
+.cover .cover2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-color: #7c581a;
+  right: 1063px;
+  bottom: 400px;
+}
+.cover .cover3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background-color: #7c581a;
+  right: 755px;
+  bottom: 550px;
+}
+.cover .cover4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background-color: #7c581a;
+  right: 845px;
+  bottom: 550px;
+}
+.cover .cover5 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  background-color: #7c581a;
+  right: 575px;
+  bottom: 615px;
+}
+.cover .cover6 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  background-color: #7c581a;
+  right: 640px;
+  bottom: 615px;
+}
+.cover .cover7 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  background-color: #7c581a;
+  right: 440px;
+  bottom: 670px;
+}
+.cover .cover8 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  background-color: #7c581a;
+  right: 480px;
+  bottom: 670px;
+}
+
+.connet .connet1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 170px;
+  height: 15px;
+  background-color: #a2a363;
+  right: 953px;
+  bottom: 455px;
+}
+.connet .connet2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  background-color: #a2a363;
+  right: 575px;
+  bottom: 650px;
+}
+.connet .connet3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 140px;
+  height: 15px;
+  background-color: #a2a363;
+  right: 755px;
+  bottom: 595px;
+}
+.connet .connet4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  background-color: #a2a363;
+  right: 440px;
+  bottom: 692px;
+}
+
+.base .base1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  right: 1023px;
+  height: 345px;
+  bottom: 85px;
+  height: 20px;
+  width: 30px;
+  background-color: #1d1f21;
+}
+.base .base2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  right: 613px;
+  height: 345px;
+  bottom: 500px;
+  height: 15px;
+  width: 20px;
+  background-color: #1d1f21;
+}
+.base .base3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  right: 463px;
+  height: 345px;
+  bottom: 600px;
+  height: 12px;
+  width: 15px;
+  background-color: #1d1f21;
+}
+.base .base4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  position: absolute;
+  right: 813px;
+  height: 345px;
+  bottom: 280px;
+  height: 18px;
+  width: 26px;
+  background-color: #1d1f21;
+}
+
+.button {
+  left: 750px;
+  position: absolute;
+  bottom: 600px;
+  font-size: 30px;
+  text-decoration: initial;
+  background-color: #ffd400;
+  border-radius: 20px;
+}
+
+.button1 {
+  position: absolute;
+  left: 600px;
+  bottom: 500px;
+  font-size: 30px;
+  text-decoration: initial;
+  background-color: #ffd400;
+  border-radius: 20px;
+}
+
+.button2 {
+  position: absolute;
+  left: 190px;
+  bottom: 100px;
+  font-size: 48px;
+  text-decoration: initial;
+  background-color: #ffd400;
+  border-radius: 20px;
+}
